@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Comedian’s Assistant</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <h1>Today’s Comedy Prompt!</h1>
+    <div id="prompt">Loading prompt...</div>
+
+    <button id="getPromptButton">Get New Prompt</button>
+
+    <textarea id="responseField" placeholder="Type your funny response..."></textarea>
+    <button id="submitButton">Submit Response</button>
+
+    <div class="secret-section">
+      <button id="secretTrigger">❤</button>
+      <p id="secretMessage" class="hidden"></p>
+    </div>
+  </div>
+
+  <!-- ✅ Firebase (compat version) -->
+  <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore-compat.js"></script>
+
+  <!-- ✅ Firebase Config -->
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyDUDUYHAxGxPkL4cTSDCgt-FQYzzeMmCyn4",
+      authDomain: "comedian-s-bot.firebaseapp.com",
+      projectId: "comedian-s-bot",
+      storageBucket: "comedian-s-bot.appspot.com",
+      messagingSenderId: "511559946696",
+      appId: "1:511559946696:web:02164a3b98bf654870fd",
+      measurementId: "G-75VY1TWG28"
+    };
+
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
+  <!-- ✅ Your JS -->
+  <script src="app.js"></script>
+</body>
+</html>

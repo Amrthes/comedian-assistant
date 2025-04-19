@@ -1,0 +1,88 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f7fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url('https://i.pinimg.com/736x/d3/95/bf/d395bfeebd7e2882ea5c32537e0ab725.jpg');  /* Set an image as the background */
+    background-size: cover;  /* Make sure the image covers the entire screen */
+    background-position: center center;  /* Center the image */
+    background-repeat: no-repeat;
+
+
+
+
+
+
+}
+
+#app {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+}
+
+h1 {
+  color: #ff6a00;
+}
+
+#prompt {
+  font-size: 18px;
+  margin: 20px 0;
+  color: #333;
+  font-weight: bold;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  resize: none;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #ffcc00;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background-color: #ffb700;
+}
+
+.secret-section {
+  margin-top: 25px;
+}
+
+#secretTrigger {
+  background-color: transparent;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+}
+
+#secretMessage {
+  margin-top: 10px;
+  font-style: italic;
+  color: #555;
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
